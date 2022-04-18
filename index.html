@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Natalya, cv, resume">
     <meta name="description" content="Это сайт-резюме Натальи Львовской">
+    <link rel="stylesheet" href="styles.css">
     <title>Natalya Resume</title>
 </head>
 <body>
-    
-    <img src="IMG_2497.JPG" alt="Наталья Львовская" width="200">
 
+    <div class="container">
+    
+    <div class="info">
+    <img src="IMG_2497.JPG" alt="Наталья Львовская" class="avatar">
+
+    <div class="info-text">
     <h1>Наталья Львовская</h1>
 
     <p>Я начала изучать <strong>HTML и CSS</strong> с нуля</p>
@@ -23,25 +28,30 @@
     <a href="https://www.instagram.com/gentlewoman2650999" target="_blank">instagram</a>
     |
     <a href="https://t.me/NatalyaNR" target="_blank">telegram</a>
+</div>
+</div>
 
+<div class="card bg-green">
     <h2>Мои хобби:</h2>
 
-    <ol>
+    <ol class="list">
         <li>Путешествия</li>
         <li>Код</li>
         <li>Кулинария</li>
     </ol>
+</div>
 
+<div class="card bg-yellow">
 <h2>Опыт работы</h2>
 
-<table>
-    <thead>
+<table class="table">
+    <!-- <thead>
         <tr>
             <th>Название</th>
             <th>Должность</th>
             <th>Год</th>
         </tr>
-    </thead>
+    </thead> -->
     <tbody>
         <tr>
             <td>Рекламное агентство</td>
@@ -55,29 +65,35 @@
         </tr>
     </tbody>
 </table>
+</div>
 
-<h2>Связаться со мной</h2>
 
-<form action="/">
-    <div>
+
+<form action="/" class="form">
+    <h2>Связаться со мной</h2>
+
+    <div class="form-row"></div>
+
+    <div class="form-group">
         <label for="name">Ваше имя:</label>
         <input type="text" id="name" placeholder="Введите имя">
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="email">Ваш email:</label>
         <input type="email" id="email" placeholder="Введите email">
     </div>
 
-    <div>
+    <div class="form-group">
         <label for="message">Ваше сообщение:</label>
-        <br>
         <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение"></textarea>
     </div>
+    <input class="btn" type="submit" value="Отправить!">
 </form>
 
     <br>
     <br>
     <br>
+</div>
 </body>
 </html>
